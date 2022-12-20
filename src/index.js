@@ -58,7 +58,7 @@ exports.handler = async (event, context, callback) => {
     try {
         const gifParams = {
             Bucket: gifBucket,
-            Key: srcKey,
+            Key: srcKey + ".gif",
             Body: gifImg,
             ContentType: "image"
         };
@@ -74,7 +74,7 @@ exports.handler = async (event, context, callback) => {
     try {
         const pngParams = {
             Bucket: pngBucket,
-            Key: srcKey,
+            Key: srcKey + ".png",
             Body: pngImg,
             ContentType: "image"
         };
